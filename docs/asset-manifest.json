@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/didactic-octo-tribble/static/css/main.0847c654.css",
+    "main.js": "/didactic-octo-tribble/static/js/main.db7f1e3c.js",
+    "index.html": "/didactic-octo-tribble/index.html",
+    "main.0847c654.css.map": "/didactic-octo-tribble/static/css/main.0847c654.css.map",
+    "main.db7f1e3c.js.map": "/didactic-octo-tribble/static/js/main.db7f1e3c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0847c654.css",
+    "static/js/main.db7f1e3c.js"
+  ]
+}
