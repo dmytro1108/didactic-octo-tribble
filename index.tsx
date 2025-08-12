@@ -159,23 +159,20 @@ class Extra extends Component {
                     </div>
                     <div style={{ fontSize: "23px", marginTop: "8px" }}>
                         <li>
-                            {/*
-                            <div style = {{ fontSize: "23px", fontWeight: "600"}}>
                             
-
-                                
+                            <div style = {{ fontSize: "23px", fontWeight: "600"}}>
                                 Small Business Website (AI-Enhanced)
                             </div>
                             Designed and deployed a responsive, interactive website using HTML, CSS, and JavaScript, integrating AI-driven design suggestions to improve UX flow, optimize layout, and enhance creative visuals. Implemented animated transitions and dynamic imagery to give the site a “living” feel while maintaining clean, readable code for future scalability. Resulted in a 50% reduction in bounce rate for the client.
-                            */}
+                            
                         </li>
                         <li>
-                            {/*
+                            
                             <div style = {{ fontSize: "23px", fontWeight: "600"}}>
                                 Roblox Game Development (MVC + AI)
                             </div>
                             Engineered a modular, maintainable Lua game following the Model-View-Controller (MVC) architectural pattern, in compliance with Roblox development standards. Leveraged AI-assisted code generation for optimization, ensuring logical readability and future-proof scalability while incorporating advanced combat and environment interaction systems.
-                            */}
+                            
                         </li>
                         <li>
                             <div style = {{ fontSize: "23px", fontWeight: "600"}}>
@@ -184,12 +181,11 @@ class Extra extends Component {
                                 Trained and optimized a micrograd-based neural network, applying a cross-entropy loss function to progressively improve classification accuracy over 10 training generations. Achieved a 90% increase in prediction accuracy compared to the baseline, with a measurable 15% reduction in loss through iterative parameter tuning and learning rate adjustments.
                         </li>
                         <li>
-                            {/*
                             <div style = {{ fontSize: "23px", fontWeight: "600"}}>
                                 Personal Resume Hosting Site
                             </div>
                             Developed a portfolio website to showcase professional work, integrating lightweight animations, smooth transitions, and responsive scaling for mobile/desktop compatibility.
-                            */}
+                            
                         </li>
                     </div>
 
@@ -209,7 +205,7 @@ class Extra extends Component {
 function Welcome() {
     return (
         <div className="welcome-wrap">
-            {/* Squiggle filter + ring */}
+            {/* Squiggle + ring */}
             <div className="circle-wrap">
                 <Link to="osume">
                     <button
@@ -263,8 +259,6 @@ function Welcome() {
 
 
 const rootElem = document.getElementById('root');
-// Use "/" locally and "/didactic-octo-tribble" only in production builds
-const BASENAME = process.env.NODE_ENV === 'production' ? '/didactic-octo-tribble' : '/';
 
 if( rootElem == null ) {
     alert('you forgot to put a root element in your HTML file.');
@@ -274,7 +268,7 @@ const root = createRoot( rootElem as HTMLElement );
 //<Board height={10} width={10}/>
 root.render(
     <StrictMode>
-        <BrowserRouter basename={BASENAME}>
+        <BrowserRouter basename= "/didactic-octo-tribble">
             <Routes>
                <Route
                    path="/" 
@@ -287,9 +281,7 @@ root.render(
                            position: "relative",
                            background: "#fafafaff"
                        }}>
-    
                            <Welcome/>
-                           
                        </div>
                    }
                />
