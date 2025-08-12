@@ -31,13 +31,13 @@ require("./my-button.css");
 let toChooseFrom = [
     { company: "Argos Scientific Inc,",
         date: "July 2023 - May 2024",
-        desc: "Data Analyst – Air Quality Monitoring & R&D Collaboration",
-        b1: "Analyzed multi-year fence-line air quality datasets across multiple sites, measuring particulate matter (PM2.5 and PM10), volatile organic compounds (VOCs), and gas concentrations with sub-ppb accuracy.",
-        b2: "Applied fiber optic sensing and high-reflectivity mirror systems to increase gas detection sensitivity by ~30–35%, improving confidence intervals and reducing false positives.",
-        b3: "Built and maintained 4 fully operational air quality monitoring stations, overseeing calibration, upkeep, and real-time data transmission for 12+ particulate matter monitor units.",
-        b4: "Produced comprehensive equipment operation manuals for scientific teams, ensuring consistent calibration protocols and reducing onboarding time for new technicians by 40%.",
+        desc: "Data Analyst",
+        b1: "Analyzed fence-line air quality datasets measuring particulate matter (PM2.5 and PM10), volatile organic compounds, and gas concentrations with ppm accuracy.",
+        b2: "Conducted R&D involving fiber optics and mirrors to increase gas detection sensitivity by ~30-35% to scale air quality monitoring operations.",
+        b3: "Built and maintained 4 air quality monitoring stations, calibration, upkeep, and real-time data transmission for 12+ particulate matter monitor units.",
+        b4: "Wrote comprehensive particulate matter units operation manuals, reducing onboarding time for new technicians by 40%.",
         b5: "Coordinated R&D projects with global teams, managing international shipping logistics to destinations including Israel, Taiwan, and Saudi Arabia for sensitive environmental monitoring equipment.",
-        b6: "Developed automation scripts in Python to preprocess sensor data, apply anomaly detection algorithms, and reduce manual data handling time by 60%"
+        b6: "Developed Python scripts to process sensor data to store in a database, enabling faster data access through out the company."
     }
 ];
 /**
@@ -65,7 +65,6 @@ class JobExperience extends react_1.Component {
                     <li>{i.b2}</li>
                     <li>{i.b3}</li>
                     <li>{i.b4}</li>
-                    <li>{i.b5}</li>
                     <li>{i.b6}</li>
                 </ul>
             </ul>));
@@ -185,7 +184,7 @@ class Extra extends react_1.Component {
                     </div>
                     <div style={{ fontSize: "23px", marginTop: "8px" }}>
                         Python • Java • TypeScript • JavaScript • C <br />
-                        Git • Tableau • Data Analysis • Automation Scripting • AI Tools
+                        Git • Tableau • Data Analysis • NoSQL • SQL • Automation Scripting • AI Tools
                     </div>
                 </ul>
             </div>;
