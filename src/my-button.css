@@ -1,0 +1,68 @@
+.my-button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px 20px; /* Padding inside the button */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Change cursor on hover */
+    font-size: 16px; /* Text size */
+}
+
+
+.circle-wrap {
+  position: relative;
+  width: 168px; /* outer box for both button and ring */
+  height: 168px;
+}
+
+/* === Circular button in the middle === */
+.circle-button {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: radial-gradient(circle at 30% 30%, rgba(255,255,255,0.15), rgba(255,255,255,0) 40%), #111318;
+  color: #ccccff;
+  font-size: 20px;
+  letter-spacing: 0.5px;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.45), inset 0 0 0 1px rgba(255,255,255,0.06);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  /* gentle star-like hover path around its center */
+  animation: star-hover 5s ease-in-out infinite;
+}
+
+/* ring speed in seconds >s will go faster*/
+.circle-button:hover {
+  box-shadow: 0 10px 28px rgba(0,0,0,0.5), inset 0 0 0 1px rgba(255,255,255,0.12);
+}
+
+
+/* === Keyframes === */
+@keyframes star-hover {
+  0%   { transform: translate(-50%, -50%) translate(0px, 0px); }
+  20%  { transform: translate(-50%, -50%) translate(0px, -8px); }
+  40%  { transform: translate(-50%, -50%) translate(7px, 3px); }
+  60%  { transform: translate(-50%, -50%) translate(-7px, 3px); }
+  80%  { transform: translate(-50%, -50%) translate(0px, 8px); }
+  100% { transform: translate(-50%, -50%) translate(0px, 0px); }
+}
+
+@keyframes spin-ccw {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+
+/* Small screens: preserve size but add a little breathing room */
+@media (max-width: 480px) {
+  .circle-wrap { width: 156px; height: 156px; }
+  .circle-button { width: 140px; height: 140px; font-size: 18px; }
+}
