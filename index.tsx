@@ -1,7 +1,7 @@
-import React, { StrictMode, Component, ReactNode, cloneElement, MouseEvent } from "react";
-import { createRoot } from "react-dom/client";
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
-import './my-button.css';
+import React, { StrictMode, Component, ReactNode, cloneElement,
+MouseEvent } from "react"; import { createRoot }
+from "react-dom/client"; import{ BrowserRouter, Routes, Route, Link }
+from "react-router-dom"; import './my-button.css';
 
 
 // object
@@ -158,33 +158,27 @@ class Extra extends Component {
                         Personal Projects
                     </div>
                     <div style={{ fontSize: "23px", marginTop: "8px" }}>
-                        <li>
-                            
-                            <div style = {{ fontSize: "23px", fontWeight: "600"}}>
-                                Small Business Website (AI-Enhanced)
-                            </div>
-                            Designed and deployed a responsive, interactive website using HTML, CSS, and JavaScript, integrating AI-driven design suggestions to improve UX flow, optimize layout, and enhance creative visuals. Implemented animated transitions and dynamic imagery to give the site a “living” feel while maintaining clean, readable code for future scalability. Resulted in a 50% reduction in bounce rate for the client.
-                            
-                        </li>
-                        <li>
-                            
-                            <div style = {{ fontSize: "23px", fontWeight: "600"}}>
-                                Roblox Game Development (MVC + AI)
-                            </div>
-                            Engineered a modular, maintainable Lua game following the Model-View-Controller (MVC) architectural pattern, in compliance with Roblox development standards. Leveraged AI-assisted code generation for optimization, ensuring logical readability and future-proof scalability while incorporating advanced combat and environment interaction systems.
-                            
-                        </li>
+
                         <li>
                             <div style = {{ fontSize: "23px", fontWeight: "600"}}>
                                 Micrograd Neural Network Optimization
                             </div>
-                                Trained and optimized a micrograd-based neural network, applying a cross-entropy loss function to progressively improve classification accuracy over 10 training generations. Achieved a 90% increase in prediction accuracy compared to the baseline, with a measurable 15% reduction in loss through iterative parameter tuning and learning rate adjustments.
+                                Trained and optimized a micrograd-based neural network in Python implementing cross-entropy loss to improve classification accuracy over 10 training generations. Achieved an average 10% accuracy increase per iteration and reduced loss by 15% through parameter tuning and learning rate adjustments.
                         </li>
                         <li>
+                            
                             <div style = {{ fontSize: "23px", fontWeight: "600"}}>
-                                Personal Resume Hosting Site
+                                Business app (website for a small business)
                             </div>
-                            Developed a portfolio website to showcase professional work, integrating lightweight animations, smooth transitions, and responsive scaling for mobile/desktop compatibility.
+                            Took up writing a React app for a small business over the summer. Utilized HTML, CSS, and Typescript to make a responsive, interactive website. Leveraged AI-assisted code for the overall theme of the front-end layout. Deployed the site via Netlify for the client that now serves as the primary brand presence, improving customer engagement and expanding reach by 50%.
+                            
+                        </li>
+                        <li>
+                            
+                            <div style = {{ fontSize: "23px", fontWeight: "600"}}>
+                                Roblox Game (personal project)
+                            </div>
+                            Wrote a modular Lua game using the MVC app design pattern. Used an AI tool to generate code for a server script that links event handling in ReplicatedStorage with modules in ServerScriptServices to separate code between the front-end and back-end logic for modularity and maintainability of the game.
                             
                         </li>
                     </div>
@@ -195,7 +189,7 @@ class Extra extends Component {
                     </div>
                     <div style={{ fontSize: "23px", marginTop: "8px" }}>
                         Python • Java • TypeScript • JavaScript • C <br />
-                        Git • Tableau • Data Analysis • Automation Scripting
+                        Git • Tableau • Data Analysis • Automation Scripting • AI Tools
                     </div>
                 </ul>
             </div>
